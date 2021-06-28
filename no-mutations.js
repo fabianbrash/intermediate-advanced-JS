@@ -9,9 +9,14 @@ const state = {
 }*/
 
 // the above can also be written as, and note I've also added the () around state
-//visually it just clarifies things for me
+// visually it just clarifies things for me
+// also note that I am setting default values for our object literal, when I called the function
+// I forgot to pass the state, again no () so I didn't think about the fact that the function takes an argument
+// so I got a weird result it just returned the new background color and nothing else, then I realized that I 
+// forgot to pass the state prop and once I did the result was correct, but by adding a default value it helps
+// if you forget to send a prop to the function
 
-const declarativeMakeBackgroundBlack = (state) => ({ ...state, background: '#000000' });
+const declarativeMakeBackgroundBlack = (state = { foreground: '#999999', background: '#FFFFFF' }) => ({ ...state, background: '#000000' });
 
 const newState = declarativeMakeBackgroundBlack(state);
 
