@@ -31,7 +31,8 @@ console.log(turtles);
 const declarativeAddTurtle = (turtles) => (turtle = 'You did not sent me a Tortoise') => [...turtles, turtle];
 // takes 'array of turtles' and the 'new turtle' as its input.
 // It returns new array of turtles without changing the original array
-//note I am also setting a default value for turtle as you a reminder that you need to pass me a tortoise
+// note I am also setting a default value for turtle as a reminder that you need to pass me a tortoise
+// also note () again.
 
 
 const newTurtle = declarativeAddTurtle(turtles);
