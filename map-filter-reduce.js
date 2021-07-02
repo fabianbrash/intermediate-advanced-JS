@@ -24,3 +24,27 @@ console.log(result);
 const myArr = ['dog', 'cat', 'horse', 'cow'];
 
 console.log(myArr.map((r) => r));
+
+
+// better example is with an array of object literal
+
+const users = 
+[
+{
+    name: 'user1',
+    status: 'single',
+    age: 21,
+},
+{
+    name: 'user2',
+    status: 'married',
+    age: 31,
+},
+{
+    name: 'user3',
+    status: 'single',
+    age: 25
+},
+];
+
+console.log(users.map((user) => user.status));
